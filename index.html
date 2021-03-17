@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Comic Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Shop | Main</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
@@ -13,18 +14,19 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo.png" alt="" width="200px">
+                    <a href="index.html"><img src="images/logo.png" alt="" width="200px"></a>
                 </div>
                 <nav>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href="">Account</a></li>
+                        <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
-                <img src="images/cart.png" width="30px">
+                <a href="cart.html"><img src="images/cart.png" width="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-navbar">
@@ -39,7 +41,7 @@
             </div>
         </div>
     </div>
-    <!--- featured categories --->
+    <!-- featured categories -->
     <div class="categories">
         <div class="small-container">
             <div class="row">
@@ -58,72 +60,349 @@
             </div>
         </div>
     </div>
-    <!--- featured categories --->
+    <!-- featured products -->
     <div class="small-container">
         <h2 class="title">Featured Products</h2>
-        
-        <div class="col-products">
-            <img src="images/The Maxx.jpg">
-            <h4>The Maxx</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-
+        <div class="row">
+            <div class="col-products">
+                <a href="single-product.html"><img src="images/The Maxx.jpg"></a>
+                <a href="single-product.html"><h4>The Maxx</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+    
+                </div>
+                <p>$60</p>
             </div>
-            <p>$60</p>
-        </div>
-
-        <div class="col-products">
-            <img src="images/Incal.jpg">
-            <h4>Incal</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-
+            <div class="col-products">
+                <img src="images/Incal.jpg">
+                <h4>Incal</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+    
+                </div>
+                <p>$70</p>
             </div>
-            <p>$70</p>
-        </div>
-
-        <div class="col-products">
-            <img src="images/Dorohedoro.jpg">
-            <h4>Dorohedoro</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-
+    
+            <div class="col-products">
+                <img src="images/Dorohedoro.jpg">
+                <h4>Dorohedoro</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+    
+                </div>
+                <p>$30</p>
             </div>
-            <p>$30</p>
-        </div>
-
-        <div class="col-products">
-            <img src="images/Scott Pilgrim.jpg">
-            <h4>Scott Pilgrim</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-
+    
+            <div class="col-products">
+                <img src="images/Scott Pilgrim.jpg">
+                <h4>Scott Pilgrim</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+    
+                </div>
+                <p>$40</p>
             </div>
-            <p>$40</p>
         </div>
-
-
-
-
-
+        <!-- Latest Products -->>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-products">
+                <img src="images/Blame.jpg">
+                <h4>Blame!</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+    
+                </div>
+                <p>$40</p>
+            </div>
+            <div class="col-products">
+                <img src="images/Metabarons.jpg">
+                <h4>The Metabarons</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+    
+                </div>
+                <p>$70</p>
+            </div>
+    
+            <div class="col-products">
+                <img src="images/Kill Six Billion Demons.jpg">
+                <h4>Kill Six Billion Demons</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+    
+                </div>
+                <p>$30</p>
+            </div>
+    
+            <div class="col-products">
+                <img src="images/Nausicaa.jpg">
+                <h4>Nausicaa of the Valley of the Wind</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+    
+                </div>
+                <p>$50</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-products">
+                <img src="images/Punpun.jpg">
+                <h4>Goodnight Punpun</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+    
+                </div>
+                <p>$40</p>
+            </div>
+            <div class="col-products">
+                <img src="images/Saga.jpg">
+                <h4>Saga</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+    
+                </div>
+                <p>$30</p>
+            </div>
+    
+            <div class="col-products">
+                <img src="images/Salambo.jpg">
+                <h4>Salambo</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+    
+                </div>
+                <p>$70</p>
+            </div>
+    
+            <div class="col-products">
+                <img src="images/Vampire Requiem Chevalier.jpg">
+                <h4>Vampire Requiem Chevalier</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$50</p>
+            </div>
+        </div>
 
     </div>
+    <!-- Offer -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-navbar">
+                    <img src="images/Kabuki.jpg" class="offer-img">
+                </div>
+                <div class="col-navbar">
+                    <p>Exclusively Available out our store!</p>
+                    <h1>Kabuki: Collector's Edition</h1>
+                    <small>Created by artist and writer David Mack, first published in 1994.It is a story of an assassin who struggles with her identity 
+                        in near-future Japan. The 2004-2009 miniseries, Kabuki: The Alchemy, was published by Marvel Comics under its imprint Icon Comics. 
+                        The series has been collected into several trade paperbacks, which include several one-shots and spin-off limited series.</small>
+                        <br>
+                    <a href="" class="btn">Buy Now &#10159;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- Testimonial --->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-categories">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/person-1.jpg">
+                    <h3>John Daller</h3>
+                </div>
+                <div class="col-categories">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/person-2.jpg">
+                    <h3>Nathan Spencer</h3>
+                </div>
+                <div class="col-categories">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/person-3.jpg">
+                    <h3>Natalie Thinkle</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brands -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-brands">
+                    <img src="images/logo-marvel.png">
+                </div>
+                <div class="col-brands">
+                    <img src="images/logo-dc.jpg">
+                </div>
+                <div class="col-brands">
+                    <img src="images/logo-Image.png">
+                </div>
+                <div class="col-brands">
+                    <img src="images/logo-darkhorse.jpg">
+                </div>
+                <div class="col-brands">
+                    <img src="images/logo-humanoids.jpg">
+                </div>
+                <div class="col-brands">
+                    <img src="images/logo-shounenjump.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>App available for Android and iOS</p>
+                    <div class="app-logo">
+                        <img src="images/app-logo.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our store offers a wide variety of comics from the most
+                        popular and mainstream to the niche, indie and avant-garde.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Jacek Garbowski</p>
+        </div>
+    </div>
+
+    <!--- js for toggle menu --->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+
+
 
 </body>
 </html>
+
+<!--
+2 - navbar
+3 - categories
+4 - products
+5 - brands
+-->
